@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 183px;
+        height: 130px;
+        border: 1px solid red;
+
+        overflow: hidden;
+      }
+      div img {
+        width: 193px;
+        height: 130px;
+
+        transition: all 0.4s;
+
+        /* 盒子中的图片动 , 盒子中的内容动 , 给图片加 过渡(transition) */
+      }
+
+      div:hover img{
+        margin-left:-10px 
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 体会京东过渡, 
+    1. 图片放上去的时候
+    2. 鼠标经过时候
+    3.加上过渡 transition
+    -->
+
+    <div>
+      <img src="images/1.jpg" alt="" />
+    </div>
+    <div>
+      <img src="images/2.jpg" alt="" />
+    </div>
+    <div>
+      <img src="images/3.jpg" alt="" />
+    </div>
+  </body>
+</html>

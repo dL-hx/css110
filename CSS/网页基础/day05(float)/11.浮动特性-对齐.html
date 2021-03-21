@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      /* 利用浮动, 让多个div一行显示 */
+      .header{
+        margin: auto;
+        height: 200px;
+        width: 400px;
+      }
+      .header div {
+        width: 100px;
+        height: 100px;
+        /* float: left; */
+      }
+      .one {
+        background-color: red;
+        float: left;
+      }
+      .two {
+        background-color: green;
+        float: left; 
+      }
+      .three {
+        background-color: skyblue;
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="one"></div>
+      <div class="two"></div>
+      <div class="three"></div>
+    </div>
+  </body>
+</html>

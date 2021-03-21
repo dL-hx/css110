@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      section {
+        width: 80%;
+        height: 150px;
+        margin: 100px auto;
+        /* background-color: pink; */
+      }
+
+      section div {
+        width: 33.33%;
+        height: 100%;
+
+        float: left;
+      }
+
+      section div:nth-child(1) {
+        background-color: pink;
+      }
+
+      section div:nth-child(2) {
+        margin: 0 10px;/* 给这个盒子左右加 10px 间距, 会让盒子掉下来 */
+
+        background-color: purple;
+      }
+
+      section div:nth-child(3) {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </section>
+  </body>
+</html>

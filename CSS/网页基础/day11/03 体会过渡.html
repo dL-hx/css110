@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+
+            /* transition: width .3s ease 2s, height 0.3s 多组属性用 逗号分隔 */
+            /*过渡写在本身上  谁做过渡动画, 写在谁身上*/
+            transition: all 0.5s
+
+        }
+        div:hover{
+            width: 800px;
+            height: 300px;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

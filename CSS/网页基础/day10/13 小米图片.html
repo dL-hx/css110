@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 632px;
+            height: 340px;
+            box-sizing: border-box;
+            border-radius: 10px;
+
+            position: relative;
+            overflow: hidden;
+        }
+
+        div:hover::after{
+            /*鼠标经过div 的时候 在里面插入一个 盒子*/
+            content: '';
+
+            /*边框压到盒子上只能定位*/
+            position: absolute;
+            /*background-color: purple;*/
+            /*定位转换为行内块  , 没有内容  所以要给宽高 100%*/
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border: 20px solid rgba(255,255,255,.5);
+            /*给 border 会撑开盒子 ,不想让边框撑开盒子 内减模式 */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="mi.jpg" alt="">
+    </div>
+    <div>
+        <img src="mi.jpg" alt="">
+    </div>
+    <div>
+        <img src="mi.jpg" alt="">
+    </div>
+    <div>
+        <img src="mi.jpg" alt="">
+    </div>
+</body>
+</html>

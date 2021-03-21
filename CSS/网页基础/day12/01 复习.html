@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+        background-color: green;
+      }
+
+      div:hover .a {
+        transition: all 0.3s; /* s ms过渡写在本身上 谁做动画写在谁身上 */
+        /* transform: translate(100px, 100px); 类似于相对定位,  相对于自己
+
+transform:scale(1.3); css 层叠, 样式名称相同 , 后来的样式会层叠掉之前的样式
+样式层叠用空格隔开 */
+
+        /* transform: translate(100px, 100px) scale(0.3);顺序有关系, 先移动后缩放 */
+        transform: translate(100px, 100px) scale(0.3) rotate(45deg) ; /* 顺序有关系, 先缩放后 移动*/
+        transform-origin: left top; /* 改变元素的原点(旋转位置)到左上角 */
+        /* 或者以px像素点进行旋转
+        transform-origin: 10px 10px;  */
+        /* transform:translate(100px) 只有x 值,  y默认为0
+transform: scale(1.3)  只有x值, y默认等比缩放  x  y都缩放1.3倍
+ */
+      }
+      .a {
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- 外面套一个大盒子,  鼠标放到大盒子上时候,  小盒子开始缩放 -->
+    <div>
+      <div class="a"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            width: 224px;
+            height: 224px;
+        }
+
+        /*    先将两个盒子放在一起  */
+
+        div img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all 2s;
+        }
+
+        div:hover img { /*鼠标放上 div 的时候 , 让其中的 img Y轴翻转 180deg*/
+            transform: rotateY(180deg);
+        }
+
+        /*当翻转 过去的时候 , 让第二个 盒子不可见 */
+        div img:last-child {
+            backface-visibility: hidden;
+            /*定义当图片不面向屏幕时是否可见*/
+        }
+
+
+    </style>
+</head>
+<body>
+<div>
+    <img alt="" src="images/hou.svg">
+    <img alt="" src="images/qian.svg">
+</div>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			div {
+				/*块级*/
+				height: 100px;
+				background-color: pink;
+				text-align: center;
+				/* 文字水平居中 */
+			}
+
+			/*块级元素有了宽高, 文字水平不能居中,  
+			  行内元素中不要方块级元素
+			
+				text-align: center
+					块级元素中的行内元素会居中
+					
+			一.块级元素：
+			（div、p、h1~h6、ul、ol、li、table
+			table、，HTML5新增的header）
+			二.行内元素
+			（span、img、a、lable、input、abbr（缩写）、em（强调）、
+			、i（斜体）、textarea、select、strong、u（下划线）、button
+			（默认display：inline-block））
+			
+			三、行内块元素
+			行内块元素的特性
+			元素排列在一行
+			宽度默认由内容决定
+			元素间默认有间距
+			支持宽高、外边距、内边距的所有样式的设置
+			a, span 
+			
+			*/
+			p {
+				/* width: 300px;
+				height: 100px; */
+				display: inline;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<p> 文字水平居中</p>
+		</div>
+
+		<span>
+			span b u a img 行内元素
+		</span>
+		<div>
+			div span img
+		</div>
+
+		<p>
+			段落 文字组成的 文字类的块级元素
+		</p>
+		<h1>文字</h1>
+		<p>
+			<div>123</div>
+		</p>
+
+	</body>
+</html>

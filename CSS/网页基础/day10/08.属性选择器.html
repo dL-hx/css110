@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*选出所有带有 class 属性的对象
+        div[class]
+        {
+            background-color:yellow;
+        }*/
+
+        /*选出 class = demo 的
+
+         div[class=demo]
+         {
+             background-color:yellow;
+         }
+        */
+
+       /* 选出 class 属性 以 test 开头的标签
+        div[class ^=test] {
+            background-color: purple;
+        }*/
+
+        div[class $=test] {/*选出 test 结尾的标签   ^   开始   $    结尾*/
+            background-color: purple;
+        }
+
+        /*[attribute*=value]	a[src*="abc"]	选择其 src 属性中包含 "abc" 子串的每个 <a> 元素。	3*/
+    </style>
+</head>
+<body>
+<div class="demo">王者农药</div>
+<div>王者农药</div>
+<div>王者农药</div>
+<div>王者农药</div>
+<div class="demo">王者农药</div>
+<div class="demo">王者农药</div>
+<div class="firsttest">王者农药</div>
+<div class="test">王者农药</div>
+<div class="test1">王者农药</div>
+</body>
+</html>

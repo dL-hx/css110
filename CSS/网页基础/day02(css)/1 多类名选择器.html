@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+        /* 
+            多类名选择器:既要有一种样式, 又要有另一种样式 
+            与类目顺序无关
+            后来的属性居上
+
+            1. 样式显示效果跟HTML元素中的类名先后顺序没有关系,受CSS样式书写的上下顺序有关。
+            2. 各个类名中间用空格隔开。
+        */
+      .red {
+        color: red;
+      }
+
+      .font20 {
+        font-size: 20px;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="red font20">多类名</div>
+    <div>多类名</div>
+    <div>多类名</div>
+    <div>多类名</div>
+
+    <p class="red">多类名</p>
+    <p>多类名</p>
+    <p>多类名</p>
+    <p class="font20">多类名</p>
+  </body>
+</html>

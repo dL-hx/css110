@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: white;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            /* 动画效果, 淡入淡出+` */
+            transition: all 1s;
+            /*盒子阴影:  水平  竖直   影子虚实  影子大小   影子颜色 */
+            /* box-shadow: 2px 2px 2px 2px red */
+        }
+
+        div:hover{ /*鼠标经过div时候的样子*/
+            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1)
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

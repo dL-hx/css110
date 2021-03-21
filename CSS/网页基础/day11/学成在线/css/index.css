@@ -1,0 +1,256 @@
+body {
+    background-color: #f3f5f7;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    border: 0;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #F4F5F9;
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+header {
+    width: 1300px;
+    height: 100px;
+    /*background-color: pink;*/
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.logo {
+    width: 195px;
+    height: 42px;
+    /*background-color: purple;*/
+
+    float: left;
+}
+
+.logo a {
+    display: block;
+    width: 195px;
+    height: 42px;
+    background: url("../images/logo.png") no-repeat;
+    text-indent: -999px;
+    overflow: hidden;
+}
+
+nav {
+    float: left;
+    margin-left: 20px;
+}
+
+nav li {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 25px;
+}
+
+nav li a {
+    display: block;
+    height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+nav li a:hover {
+    border-bottom: 2px solid #00a4ff;
+}
+
+
+.search {
+    width: 410px;
+    height: 40px;
+    /*background-color: purple;*/
+    float: left;
+    /*margin-left: 50px;*/
+    margin-left: 160px;
+}
+
+.search input {
+    width: 361px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+
+    outline: none;
+    padding-left: 10px;
+    float: left;
+}
+
+.search button {
+    width: 49px;
+    height: 40px;
+    border: 0;
+    outline: none;
+    float: left;
+    background: url("../images/fa-search.png") no-repeat;
+}
+
+.personal {
+    /*width: 270px;*/
+    height: 40px;
+    line-height: 40px;
+    float: right;
+}
+
+.personal dt, .personal dd {
+    float: left;
+}
+
+.personal s {
+    position: relative;
+    /*padding  往里面 左右挤20px*/
+    padding: 0 20px;
+
+
+    /*	s 标签是删除线, 去除删除线 	text-decoration: none;   */
+    text-decoration: none;
+}
+
+.personal s::before {
+    content: '';
+    display: block; /*因为伪元素默认是行内元素, 没有宽高(行内元素), 所以要给 width, height*/
+    width: 6px;
+    height: 6px;
+    background-color: red;
+    border-radius: 50%;
+
+    /*	定位的元素不占位置, 子绝父相*/
+    position: absolute;
+    right: 12px;
+    top: 0;
+}
+
+.personal span img {
+    border-radius: 50%;
+    margin-right: 10px;
+
+    /* 谁做动画谁过渡 */
+    transition: all 0.4s
+}
+
+.personal span:hover img {/* 鼠标放到 span上 img 旋转  正值: 顺时针 . 负值:逆时针*/
+    transform: rotate(-360deg)
+}
+
+/*banner部分*/
+.banner {
+    height: 420px;
+    background-color: #1c036c;
+}
+
+.inner {
+    height: 420px;
+    background: url("../images/banner.jpg") no-repeat;
+    position: relative;
+
+}
+
+.subnav {
+    height: 100%;
+    width: 190px;
+    background-color: rgba(0, 0, 0, .3);
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    padding-top: 10px;
+}
+
+.subnav li {
+    padding-left: 20px;
+    position: relative;
+
+    height: 40px;
+    line-height: 40px;
+}
+
+.subnav a {
+    font-size: 14px;
+    color: #fff;
+
+    display: block;
+}
+
+.subnav a:hover {
+    color: #00a4ff;
+}
+
+
+.subnav span {
+    position: absolute;
+    right: 20px;
+    top: 0;
+}
+
+
+.circle {
+    width: 176px;
+    height: 20px;
+    /*background-color: #fff;*/
+    position: absolute;
+
+    bottom: 15px;
+    left: 50%;
+    /*margin-left: -88px;  == 下面*/
+    /*	新写法*/
+    transform: translate(-50%, 0);/*走自己宽度的一半*/
+}
+
+
+.circle i {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: rgba(255, 255, 255, .4);
+    margin: 0 5px;
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    /*过渡写在本身上, 谁做动画写在谁身上*/
+    transition: all 0.4s;
+}
+
+
+.circle i:hover {
+    width: 20px;
+    background-color: #fff;
+}
+
+.timebook{
+	width: 228px;
+	height: 300px;
+	position: absolute;
+	background-color: pink;
+
+	right: 0;
+	top: 50%;
+	/*transform: translate(0 ,-50%);*/
+	/*但是 Y要大写才可以 */
+	transform: translateY(-50%);/*走自己高度的一半*/
+}

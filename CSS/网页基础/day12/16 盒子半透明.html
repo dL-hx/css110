@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+    <title>Document</title>
+    <style>
+        div {
+            width: 300px;
+            height: 80px;
+            border-radius: 20px;
+            background-color: red;
+            /*  background-color: rgba(255,0,0,.2); 盒子的背景透明 */
+            opacity: 0.2; /*盒子半透明*/
+
+            filter: alpha(opacity=20); /* ie6 半透明写法 */
+
+            /*    之后的新的写法
+
+            background: rgba(0,0,0,.3);
+            */
+            position: relative;
+
+        }
+
+        .bottom {
+            width: 100%;
+            height: 20px;
+            background-color: yellow;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div class="bottom">
+        456
+    </div>
+</div>
+<div>
+    <div></div>
+    <p>123</p>
+</div>
+</body>
+</html>

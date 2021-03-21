@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      div p {
+        color: red;
+      }
+      .jianlin > p {
+        color: blue;
+      }
+
+      /* 
+                *                  all div tags
+                类 .选择器
+
+                div,p              适合于 相同样式    ,号相当于"和"     all divs and paragraphs
+                div  p  后代选择器  paragraphs inside divs  (所有的子元素)
+                div> p  子代选择器  all p tags, one level deep in div (div 中的第一个深度的p ) 
+                div.classname      交集选择器       divs with certain classname (class="classname" 的标签)
+                div#idname                         div with certain ID     (id="idname" 的标签)
+
+
+                伪类选择器
+
+
+               
+
+                伪类: link
+
+                - :link      未访问的链接 
+                - :visited   已访问的链接
+                - :hover     鼠标移动到链接上
+                - :active    选定的链接
+
+                 顺序不可颠倒 lvha
+
+                伪元素::   
+
+
+
+      */
+
+      ol li > a {
+        color: rgb(0, 255, 42);
+      }
+
+      /* 并集选择器 : 适合于 相同样式    和
+      相当于
+      
+          div{
+                color: pink
+            }
+            p{
+                color: pink
+            }
+      
+      */
+
+      div,
+      p {
+        color: pink;
+      }
+
+      a:link {
+        /* 未访问的链接样式*/
+        color: #3c3c3c;
+        font-size: 25px;
+        text-decoration: none;
+      }
+
+
+      a:hover {
+          color: red
+      }
+
+      a:active {
+        color: green
+      }
+
+   
+    </style>
+  </head>
+  <body>
+    <a href="#">秒杀</a>
+
+    <!-- <div>2</div>
+    <div>2</div>
+    <div>2</div>
+    <div>2</div>
+    <div>2</div>
+
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p> -->
+    <!--     <div>兄弟1</div>
+    <p>兄弟2</p>
+    <div>
+      <p>2</p>
+    </div>
+    <div>
+      <p>2</p>
+    </div>
+    <div class="jianlin">
+      <p>2</p>
+    </div>
+
+    <ol class="father">
+      <li>
+        <a href="#">一级菜单</a>
+        <div>
+          <a href="#">一级菜单</a>
+          <a href="#">一级菜单</a>
+          <a href="#">一级菜单</a>
+        </div>
+      </li>
+
+      <li>1</li>
+      <li>1</li>
+    </ol> -->
+  </body>
+</html>

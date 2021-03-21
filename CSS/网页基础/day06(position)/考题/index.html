@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      .message {
+        width: 1170px;
+        height: 400px;
+        margin: 100px auto;
+        border: 1px solid #ccc;
+      }
+
+      .pl-hd,
+      .edit,
+      .footer {
+        width: 1080px;
+        margin: 30px auto;
+      }
+
+      .pl-hd {
+        height: 45px;
+        line-height: 45px;
+        /* background-color: pink; */
+      }
+      .pl-hd h4 {
+        float: left;
+      }
+
+      .pl-hd img {
+        float: left;
+        width: 125px;
+        height: 45px;
+      }
+
+      .pl-hd a {
+        color: red;
+        float: left;
+      }
+
+      .edit {
+      }
+
+      .edit textarea {
+        width: 1060px;
+        height: 145px;
+        color: #ccc;
+        /*-- 
+            padding 是上下左右 , 所以要 宽度, 高度 要减: 20 px
+        --*/
+        padding: 10px;
+      }
+
+      .footer p {
+        color: red;
+        font-size: 14px;
+        margin-top: 10px
+      }
+    </style>
+  </head>
+  <body>
+    <div class="message">
+      <div class="pl-hd">
+        <h4>评论</h4>
+        <img src="star.png" alt="" srcset="" />
+        <a href="#">我要评论</a>
+      </div>
+
+      <div class="edit">
+        <textarea placeholder="请输入对强哥意见和建议"></textarea>
+      </div>
+
+      <div class="footer">
+        <input type="image" src="btn.png" alt="">
+        <p>暂时没有评论</p>
+      </div>
+    </div>
+  </body>
+</html>

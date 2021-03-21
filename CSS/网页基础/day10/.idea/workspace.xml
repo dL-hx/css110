@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5584af63-ee76-43bc-9b1a-2b9518a7390a" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1P1xatKc5ZAtL8hEC1ELn6nknMB" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="F:/Program Files/nodejs/node_global/node_modules/dva-cli/bin" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="typescript.add.unambiguous.imports.on.the.fly" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.14 鼠标经过显示三角(伪元素字体结合使用).html">
+    <configuration name="11 图标字体.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/day10/11 图标字体.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="12 css3盒子模型.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/day10/12 css3盒子模型.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="13 小米图片.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/day10/13 小米图片.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="14 鼠标经过显示三角(伪元素字体结合使用).html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/day10/14 鼠标经过显示三角(伪元素字体结合使用).html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="15.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/day10/15.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.14 鼠标经过显示三角(伪元素字体结合使用).html" />
+        <item itemvalue="JavaScript Debug.15.html" />
+        <item itemvalue="JavaScript Debug.13 小米图片.html" />
+        <item itemvalue="JavaScript Debug.12 css3盒子模型.html" />
+        <item itemvalue="JavaScript Debug.11 图标字体.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5584af63-ee76-43bc-9b1a-2b9518a7390a" name="Default Changelist" comment="" />
+      <created>1565055471753</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1565055471753</updated>
+      <workItem from="1565055476202" duration="5148000" />
+      <workItem from="1565082012474" duration="5448000" />
+      <workItem from="1565136359403" duration="5442000" />
+      <workItem from="1565145410138" duration="7805000" />
+      <workItem from="1565159592985" duration="8007000" />
+      <workItem from="1565223248266" duration="572000" />
+      <workItem from="1565224403877" duration="1096000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

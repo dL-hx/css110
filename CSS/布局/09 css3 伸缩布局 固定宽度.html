@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      section {
+        width: 80%;
+        height: 150px;
+        margin: 100px auto;
+
+        border: .75em solid;
+        /* background-color: pink; */
+
+        /* 父亲添加  伸缩布局 */
+        display: flex;
+        flex-direction: row;
+        min-width: 500px;/* 表示 section 标签最小宽度是500px,  不能无限制的小*/
+        max-width: 1280px;/* 表示 section 标签最大宽度是1280px,  不能无限制的大*/
+        
+
+      }
+
+      section div {
+        height: 100%;
+        /* flex: 1; 孩子的份数 */
+      }
+
+      section div:nth-child(1) {
+        background-color: pink;
+
+/* child1 是 200px , child2 ,child3 分 80%(父盒子的宽度) -200 的宽度 */
+        width: 200px;
+      }
+
+      section div:nth-child(2) {
+        margin: 0 10px;
+        background-color: purple;
+        flex:1
+        /* 默认flex:1, 可以省略不写 */
+      }
+
+      section div:nth-child(3) {
+        background-color: yellow;
+        flex:2
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    
+    </section>
+  </body>
+</html>

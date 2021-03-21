@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      tr {
+        height: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        确定表单为:
+            1 行  2列
+            tr>td*2 + tab
+
+            填写数据
+       -->
+    <table
+      width="600"
+      border="0"
+      cellspacing="0"
+      cellpadding="0"
+      align="center"
+    >
+      <caption>
+        <h3>青春不常在</h3>
+      </caption>
+      <tr>
+        <td>所在地区</td>
+        <!-- maxlength: 最大长度 
+            只有最大长度, 没有最小长度
+        -->
+        <td>
+          <input type="text" value="北京" maxlength="6" />
+        </td>
+      </tr>
+      <tr>
+        <td>用户名</td>
+        <td>
+          <input type="text" value="andy" />
+        </td>
+      </tr>
+      <tr>
+        <td>密码</td>
+        <td>
+          <input type="password" value="andy" />
+        </td>
+      </tr>
+      <!-- 选择标签 
+      selected="true":选中 选项
+      -->
+      <tr>
+        <td>生日</td>
+        <td>
+          <select name="" id="">
+            <option value="" selected="true">选择年份</option>
+            <option value="">1990</option>
+            <option value="">1991</option>
+            <option value="">1992</option>
+            <option value="">1993</option>
+            <option value="">1994</option>
+          </select>
+          <select name="" id="">
+            <option value="" selected="true">选择月份</option>
+            <option value="">1月份</option>
+            <option value="">2月份</option>
+            <option value="">3月份</option>
+            <option value="">4月份</option>
+          </select>
+        </td>
+      </tr>
+      <!-- 
+          如果是一组,radio,name是相同的值 
+          checked="true":选中 选项
+        -->
+      <tr>
+        <td>性别</td>
+        <td>
+          <input type="radio" name="sex" />男
+          <input type="radio" name="sex" checked="true" />女
+        </td>
+      </tr>
+      <tr>
+        <td>类型</td>
+        <td>
+          妩媚 <input type="checkbox" name="love" checked="true" /> 气质
+          <input type="checkbox" name="love" checked="true" /> 小鲜肉
+          <input type="checkbox" name="love" />
+        </td>
+      </tr>
+      <tr>
+        <td>按钮</td>
+        <td>
+          <input type="button" value="注册" />
+          <input type="submit" value="提交" />
+          <input type="reset" value="重置" />
+        </td>
+      </tr>
+      <tr>
+        <td>上传头像</td>
+        <td>
+          <input type="button" value="选择文件" />
+          未选择任何文件
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <input type="image" src="btn.png" alt="" />
+        </td>
+      </tr>
+      <tr>
+        <td>给我留言</td>
+        <td>
+          <!-- 控制行列的宽度, 以后通过css编辑
+          cols="50"   列
+          rows="10"   行
+          -->
+          <textarea cols="50" rows="10">不支持富文本</textarea>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

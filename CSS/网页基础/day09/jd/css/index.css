@@ -1,0 +1,175 @@
+/*京东首页的css*/
+.jd {
+    /*height: 480px;*/
+    background-color: pink;
+    position: relative;
+}
+
+.jd-inner {
+    height: 480px;
+    background-color: skyblue;
+    position: relative;
+    z-index: 1; /*只有定位的盒子才有 z-index*/
+}
+
+.ad {
+    height: 480px;
+    background: url("../images/bg.png") no-repeat top center;
+    /*加了 绝对定位的盒子自动转换为行内块
+    行内块 的大小根据内容决定
+    所以 加了定位要有宽高
+
+注意子绝父相
+    */
+    position: absolute;
+    /*z-index: 0;*/
+
+    top: 0;
+    left: 0;
+    width: 100%; /*一定要写 , position 会转换为行内块 根据内容多少定宽度*/
+}
+
+.ad a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.jd-clo1 {
+    width: 190px;
+    height: 465px;
+    background-color: #6e6568;
+    float: left;
+
+    /*用padding, 会撑大盒子,  碰到宽度高度要减去*/
+    padding-top: 15px;
+}
+
+.jd-clo1 li {
+    padding-left: 10px;
+    height: 28px;
+    line-height: 28px;
+}
+
+.jd-clo1 li:hover {
+    background-color: #999395;
+}
+
+
+.jd-clo1 li a {
+    color: #fff;
+    font-size: 14px;
+}
+
+.jd-clo1 li span {
+    color: #fff;
+    font-size: 12px;
+}
+
+
+.jd-clo1 li a:hover {
+    color: #c81623;
+}
+
+.jd-clo2 {
+    width: 790px;
+    height: 480px;
+    /*background-color: purple;*/
+    float: left;
+
+    margin-left: 10px;
+}
+
+.jd-clo2-hd {
+    height: 340px;
+    /*background-color: pink;*/
+    margin-bottom: 10px;
+    /*子绝父相对*/
+    position: relative;
+
+}
+
+.jd-clo2-bd div {
+    width: 390px;
+    height: 130px;
+    float: left;
+}
+
+.jd-clo2-bd div img {
+    /*让图片的高度和盒子一样宽 , 等比缩放*/
+    width: 100%;
+}
+
+.firstPic {
+    margin-right: 10px;
+}
+
+.arr-l, .arr-r {
+    width: 30px;
+    height: 60px;
+
+    position: absolute;
+    top: 50%;
+    /*走自己盒子的一半*/
+    margin-top: -30px;
+    background: rgba(0, 0, 0, .3);
+
+    font-family: 'icomoon';
+    color: #fff;
+
+    /*    水平垂直居中*/
+    text-align: center;
+    line-height: 60px;
+
+    /*    字体大小*/
+    font-size: 25px;
+}
+
+.arr-l {
+    left: 0;
+}
+
+.arr-r {
+    right: 0;
+}
+
+.jd-clo2-hd ol{
+    width: 180px;
+    height: 20px;
+    /*background-color: pink;*/
+    background: rgba(255,255,255,.3);
+
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -90px;
+    /*圆角, 高度一半*/
+    border-radius: 10px;
+}
+
+.jd-clo2-hd ol li{
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+
+    border-radius: 50%;
+
+    float: left;
+    margin: 4px 5px;
+
+    /*鼠标放上去变为小手*/
+    cursor: pointer;
+}
+
+.jd-clo2-hd .current{
+    background-color: #f10215;
+}
+
+.jd-clo3 {
+    /*position: relative;*/
+    float: right;
+    width: 190px;
+    height: 480px;
+    /*z-index: 1;*/
+    background-color: yellow;
+}

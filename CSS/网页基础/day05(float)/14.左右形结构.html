@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+
+        /* 左右布局, 注意盒子宽度 , 进行加减
+            border : 是两边, 要减去两次
+         */
+      .top,
+      .banner,
+      .main ,
+      .foot{
+        width: 900px;
+        height: 80px;
+        background-color: pink;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+      }
+      .banner {
+        height: 200px;
+        margin-top: 10px;
+      }
+
+      .main {
+        height: 500px;
+        margin-top: 10px;
+        background-color: skyblue;
+      }
+
+      .left {
+        float: left;
+        /* width: 300px; */
+        /* width: 298px; */  /*  margin-left: 10px;  再减去 10px */
+        width: 288px;
+
+        height: 500px;
+        background-color: yellow;
+        border: 1px solid #ccc;
+      }
+
+      .right {
+        /* float: left; */
+        float: right;
+        width: 600px;
+        height: 500px;
+        background-color: deeppink;
+        margin-left: 10px;
+      }
+
+      .foot{
+        margin-top: 10px;
+        height: 120px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- .top+.banner+(.main>.left+.right)+.foot -->
+    <div class="top"></div>
+    <div class="banner"></div>
+    <div class="main">
+      <div class="left">left</div>
+      <div class="right">right</div>
+    </div>
+    <div class="foot"></div>
+  </body>
+</html>

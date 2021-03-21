@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        span{
+            /*span 行内元素 , 要转换为块级元素, 然后 w , h 才会起作用*/
+            display: inline-block; /*横向显示*/
+            /*display:block; !*竖向显示*!*/
+            background: url("images/abcd.jpg") no-repeat;
+
+            width: 112px;
+            height: 122px;
+        }
+        .a{
+            background-position: 0px 0px;
+        }
+        .n{
+            background-position: -255px -275px;
+        }
+        .d{
+            background-position: -359px 0px;
+        }
+        .y{
+            background-position: -359px -560px;
+        }
+    </style>
+</head>
+<body>
+<span class="a"></span>
+<span class="n"></span>
+<span class="d"></span>
+<span class="y"></span>
+</body>
+</html>

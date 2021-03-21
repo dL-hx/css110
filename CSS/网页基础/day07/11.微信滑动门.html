@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background: url("images/wx.jpg") repeat-x;
+        }
+
+        .nav li{
+            /*左侧浮动在一行显示*/
+            float: left;
+            /*格子间距通过 margin 调整*/
+            margin: 0 10px 0;
+
+            list-style: none;
+        }
+        .nav a {
+            /*1. a 左边放 左圆角  但是文字需要往左走 15px*/
+            height: 33px;
+            line-height: 33px;
+            color: #ffffff;
+            text-decoration: none;
+            background: url("images/to.png") no-repeat;
+            display: inline-block;
+            padding-left: 15px;
+        }
+
+        .nav span {
+            /*2. span 右边放 右圆角  但是文字需要往右走 15px*/
+            background: url("images/to.png") no-repeat right;
+            display: inline-block;
+            height: 33px;
+            padding-right: 15px;
+        }
+
+       /* .nav a:hover {
+            background-image: url("images/ao.png");
+        }
+
+        !*鼠标经过 a 标签后 , a  中的 span 标签图片改为 ao*!
+        .nav a:hover span {
+            background-image: url("images/ao.png");
+        }*/
+
+        /*nav 下面的 a 的 hover , 和 nav 下面的 span 鼠标放上去 修改图片*/
+        .nav a:hover,.nav a:hover span{
+            background-image: url("images/ao.png");
+        }
+    </style>
+</head>
+<body>
+<ul class="nav">
+    <li>
+        <a href="#">
+            <span>首页</span>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <span>三个字</span>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <span>新闻客户端</span>
+        </a>
+    </li>
+</ul>
+</body>
+</html>

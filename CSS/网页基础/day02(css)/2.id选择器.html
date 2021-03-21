@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 一个id 使用一次, class 选择器可以使用多次 */
+        /* 
+            id 选择器, 与class选择器可以混合使用
+
+            遇到相同属性, 会覆盖
+         */
+        #last{
+            color: pink
+        }
+        .red{
+            font-size: 24px
+        }
+    </style>
+</head>
+<body>
+    <div id="last" class="red">id选择器</div>
+    <div>id选择器</div>
+    <div>id选择器</div>
+</body>
+</html>

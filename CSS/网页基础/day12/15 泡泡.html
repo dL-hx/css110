@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+    <title>Document</title>
+    <style>
+
+
+        div {
+            /*先放上两个 泡泡图片, 鼠标放上去的时候 改变两张图片的位置*/
+            width: 300px;
+            height: 80px;
+            border-radius: 20px;
+            background: url("images/paopao.png") top left no-repeat, url("images/paopao.png") right bottom no-repeat;
+
+            background-color: blue; /* 多背景颜色写在下面, 防止颜色被叠加*/
+
+            /*    加上过渡动画*/
+            transition: all 4s;
+        }
+
+        div:hover {
+
+            background-position: right bottom, top left;
+
+        }
+    </style>
+</head>
+<body>
+<div>
+
+</div>
+</body>
+</html>

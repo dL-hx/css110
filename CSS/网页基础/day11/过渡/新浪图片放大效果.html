@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 386px;
+        height: 260px;
+
+        
+/* 因为图片放大, 会撑开盒子, 所以要切除多余的部分 , 加上 overflow: hidden;   */
+        overflow: hidden;
+      }
+      div img{
+        /* 谁做动画, 过渡加到谁身上 */
+        transition: all 0.5s
+      }
+      div:hover img {/* 鼠标放到 div 上 图片放大 */
+/* transform: 转换 */
+        transform: scale(1.2);/* 图片放大 1.2倍 */
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img src="images/1.jpg" alt="" />
+    </div>
+  </body>
+</html>

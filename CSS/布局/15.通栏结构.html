@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      /* 左右布局, 注意盒子宽度 , 进行加减
+            border : 是两边, 要减去两次
+         */
+
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      .top,
+      .banner,
+      .main,
+      .top-inner,
+      .foot {
+        width: 900px;
+        height: 80px;
+        background-color: pink;
+        border: 1px solid #ccc;
+        margin: 0 auto;
+      }
+
+      .top {
+        width: 100%;
+      }
+
+      /* .top-inner{
+        width: 900px;
+        height: 80px;
+        background-color: #ababab; 
+        margin: 0 auto;
+      } */
+
+      .banner {
+        height: 200px;
+        margin-top: 10px;
+        background-color: white
+      }
+
+      .banner li {
+        float: left;
+        width: 217px;
+        height: 200px;
+        margin-right: 10px;
+      }
+
+      .one {
+        background-color: purple;
+      }
+      .two {
+        background-color: blue;
+      }
+      .three {
+        background-color: pink;
+      }
+      .banner .four {
+        background-color: green;
+        margin-right: 0;
+        float: right; /*消除 1px 间距*/
+      }
+      .main {
+        height: 500px;
+        margin-top: 10px;
+        background-color: skyblue;
+      }
+
+      .left {
+        float: left;
+        /* width: 300px; */
+        /* width: 298px; */ /*  margin-left: 10px;  再减去 10px */
+        width: 288px;
+
+        height: 500px;
+        background-color: yellow;
+        border: 1px solid #ccc;
+      }
+
+      .right {
+        /* float: left; */
+        float: right;
+        width: 600px;
+        height: 500px;
+        background-color: deeppink;
+        margin-left: 10px;
+      }
+
+      .foot {
+        margin-top: 10px;
+        height: 120px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- .top+.banner+(.main>.left+.right)+.foot -->
+    <div class="top">
+      <div class="top-inner">
+        123
+      </div>
+    </div>
+    <div class="banner">
+      <!-- ul>li*4 -->
+      <ul>
+        <li class="one">1</li>
+        <li class="two">2</li>
+        <li class="three">3</li>
+        <li class="four">4</li>
+      </ul>
+    </div>
+    <div class="main">
+      <div class="left">left</div>
+      <div class="right">right</div>
+    </div>
+    <div class="foot"></div>
+  </body>
+</html>
